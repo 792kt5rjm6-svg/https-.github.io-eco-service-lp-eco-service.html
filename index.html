@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>岩倉・小牧の粗大ゴミ回収ならエコサービス株式会社｜100kgまで5,000円（税別）</title>
+  <meta name="description" content="岩倉市・小牧市の粗大ゴミ回収ならエコサービス株式会社。家具や家電などの不用品を回収。100kgまで5,000円（税別）。女性ドライバー在籍で安心。お電話・メールでお問い合わせください。" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --main: #27bcc8;
+      --main-dark: #169daa;
+      --main-soft: #e8fafb;
+      --accent: #0d5d67;
+      --text: #1f2b2e;
+      --sub: #5d6b70;
+      --bg: #f7fcfd;
+      --white: #ffffff;
+      --shadow: 0 12px 32px rgba(17, 106, 116, 0.10);
+    }
+
+    body {
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      color: var(--text);
+      line-height: 1.75;
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-title {
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--sub);
+      margin-bottom: 42px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-align: center;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.94;
+    }
+
+    .btn-main {
+      background: var(--main);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(39, 188, 200, 0.28);
+    }
+
+    .btn-sub {
+      background: rgba(255,255,255,0.96);
+      color: var(--main-dark);
+      border: 2px solid rgba(255,255,255,0.55);
+    }
+
+    .hero {
+      position: relative;
+      color: #fff;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(39,188,200,0.62), rgba(39,188,200,0.62)),
+        url("IMG_0625.jpeg") center center / cover no-repeat;
+      padding: 88px 0 76px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 25%, rgba(255,255,255,0.18), transparent 28%),
+        radial-gradient(circle at 82% 75%, rgba(255,255,255,0.16), transparent 24%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.17);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.4vw, 3.8rem);
+      line-height: 1.15;
+      margin-bottom: 18px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    }
+
+    .hero-text {
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+      color: rgba(255,255,255,0.98);
+      max-width: 670px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .hero-points span {
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-card {
+      position: relative;
+      background: rgba(255,255,255,0.97);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 44px rgba(0,0,0,0.14);
+      overflow: hidden;
+    }
+
+    .hero-card h2 {
+      color: var(--accent);
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+
+    .price-box {
+      background: var(--main-soft);
+      border: 1px solid #b8ecf0;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    .price-main {
+      color: var(--main-dark);
+      font-size: 1.9rem;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--sub);
+    }
+
+    .frog-wrap {
+      position: absolute;
+      right: -8px;
+      bottom: -10px;
+      width: 150px;
+      opacity: 0.98;
+      background: rgba(255,255,255,0.92);
+      border-top-left-radius: 28px;
+      padding: 10px 10px 0 10px;
+    }
+
+    .bg-soft {
+      background: var(--bg);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #dff3f5;
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .list li {
+      position: relative;
+      padding-left: 24px;
+      color: #444;
+    }
+
+    .list li::before {
+      content: "●";
+      color: var(--main);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.9rem;
+    }
+
+    .service-example {
+      background: linear-gradient(180deg, #ffffff 0%, #f2fbfc 100%);
+    }
+
+    .service-example ul {
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    .notice {
+      margin-top: 16px;
+      background: #fff7e8;
+      color: #7a5711;
+      border: 1px solid #f2ddad;
+      padding: 14px 16px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+    }
+
+    .reason-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reason-card::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      bottom: -18px;
+      width: 76px;
+      height: 76px;
+      background: rgba(39,188,200,0.08);
+      border-radius: 50%;
+    }
+
+    .flow-step {
+      text-align: center;
+      padding: 28px 22px;
+    }
+
+    .step-num {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--main);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      box-shadow: 0 8px 18px rgba(39,188,200,0.22);
+    }
+
+    .voice {
+      border-left: 6px solid var(--main);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #dff1f4;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 4px 14px rgba(17,106,116,0.04);
+    }
+
+    .faq-q {
+      color: var(--accent);
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .cta {
+      position: relative;
+      background: linear-gradient(135deg, #27bcc8 0%, #17a3b0 100%);
+      color: #fff;
+      text-align: center;
+      padding: 84px 0;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 22%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.11), transparent 24%);
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta h2 {
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.96);
+      margin-bottom: 22px;
+    }
+
+    .tel-number {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+
+    .mail {
+      font-size: 1rem;
+      margin-top: 12px;
+      color: rgba(255,255,255,0.96);
+      word-break: break-all;
+    }
+
+    .cta-frog {
+      margin: 24px auto 0;
+      width: 120px;
+      background: rgba(255,255,255,0.92);
+      padding: 10px;
+      border-radius: 22px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+    }
+
+    footer {
+      background: #0b5f6b;
+      color: #eafafb;
+      text-align: center;
+      padding: 28px 0;
+      font-size: 0.95rem;
+    }
+
+    .sticky-tel {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 999;
+    }
+
+    .sticky-tel a {
+      display: inline-block;
+      background: var(--main);
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 10px 28px rgba(39,188,200,0.30);
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .service-example ul {
+        columns: 1;
+      }
+
+      .frog-wrap {
+        width: 120px;
+        right: -6px;
+      }
+
+      .hero {
+        background-position: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="badge">岩倉市・小牧市対応</div>
+        <h1>岩倉・小牧の<br>粗大ゴミ回収</h1>
+        <p class="hero-text">
+          エコサービス株式会社では、家具などの大きな粗大ゴミや家電などの不用品を回収しています。
+          地域密着で、安心してご相談いただける回収サービスを目指しています。
+        </p>
+
+        <div class="hero-points">
+          <span>100kgまで5,000円（税別）</span>
+          <span>女性ドライバー在籍</span>
+          <span>計量器付き車両で安心</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="tel:0587370111" class="btn btn-main">電話で申し込む</a>
+          <a href="#contact" class="btn btn-sub">お問い合わせを見る</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>料金のご案内</h2>
+        <div class="price-box">
+          <div class="price-main">100kgまで 5,000円（税別）</div>
+          <div class="small">以降は5kgごとに55円（税別）追加</div>
+        </div>
+        <p class="small">※ 家電リサイクル対象品は別途料金となります。</p>
+        <p class="small">※ 冷蔵庫・洗濯機などは、事前に家電リサイクル券が必要です。</p>
+
+        <div class="frog-wrap">
+          <img src="IMG_0624.jpeg" alt="エコサービス株式会社のカエルキャラクター">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">サービス内容</h2>
+      <p class="section-subtitle">家具や家電などの不用品を、岩倉・小牧エリアで回収しています。</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>粗大ゴミ回収</h3>
+          <p>タンス、机、ソファー、テレビ台などの大きな粗大ゴミに対応しています。</p>
+        </div>
+        <div class="card">
+          <h3>家電回収</h3>
+          <p>家電の回収も可能です。対象品目によっては家電リサイクル券のご用意をお願いいたします。</p>
+        </div>
+        <div class="card">
+          <h3>安心の対応</h3>
+          <p>女性ドライバーも在籍しており、一人暮らしの女性にも安心してお申し込みいただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft service-example">
+    <div class="container">
+      <h2 class="section-title">回収できるもの例</h2>
+      <p class="section-subtitle">ご家庭内のさまざまな不用品に対応しています。</p>
+
+      <div class="card">
+        <ul class="list">
+          <li>タンス</li>
+          <li>テレビ台</li>
+          <li>ふとん</li>
+          <li>ソファー</li>
+          <li>ガラス類</li>
+          <li>陶磁器具</li>
+          <li>じゅうたん</li>
+          <li>机</li>
+        </ul>
+
+        <div class="notice">
+          ※ 冷蔵庫、洗濯機などは家電リサイクル券が必要になります。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="price">
+    <div class="container">
+      <h2 class="section-title">料金について</h2>
+      <p class="section-subtitle">わかりやすい料金設定を心がけています。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>基本料金</h3>
+          <ul class="list">
+            <li>100kgまで 5,000円（税別）</li>
+            <li>5kgごとに55円（税別）追加</li>
+            <li>計量器付き車両で重量が見えて安心</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>家電リサイクル対象品</h3>
+          <ul class="list">
+            <li>家電リサイクル対象品は別途料金です</li>
+            <li>事前に家電リサイクル券のご用意をお願いします</li>
+            <li>詳しくは下のよくある質問をご確認ください</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft">
+    <div class="container">
+      <h2 class="section-title">エコサービス株式会社が選ばれる理由</h2>
+      <p class="section-subtitle">地域密着で、安心して相談できる粗大ゴミ回収を目指しています。</p>
+
+      <div class="grid-3">
+        <div class="card reason-card">
+          <h3>岩倉・小牧対応</h3>
+          <p>地域密着で、岩倉市・小牧市の粗大ゴミ回収に対応しています。</p>
+        </div>
+        <div class="card reason-card">
+          <h3>計量器付きで安心</h3>
+          <p>トラックに付いている計量器で、何kgまで積んでいるのか見えるため安心です。</p>
+        </div>
+        <div class="card reason-card">
+          <h3>女性ドライバー在籍</h3>
+          <p>一人暮らしの女性でも相談しやすい体制を整えています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">ご利用の流れ</h2>
+      <p class="section-subtitle">お問い合わせから回収まで、わかりやすくご案内します。</p>
+
+      <div class="grid-3">
+        <div class="card flow-step">
+          <div class="step-num">1</div>
+          <h3>お問い合わせ</h3>
+          <p>まずはお電話またはメールでご相談ください。</p>
+        </div>
+        <div class="card flow-step">
+          <div class="step-num">2</div>
+          <h3>内容確認</h3>
+          <p>回収するものや量を確認し、ご案内いたします。</p>
+        </div>
+        <div class="card flow-step">
+          <div class="step-num">3</div>
+          <h3>現地回収・お支払い</h3>
+          <p>現地で回収し、現金にてお支払いいただきます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft">
+    <div class="container">
+      <h2 class="section-title">お客様の声</h2>
+      <p class="section-subtitle">実際にご利用いただいた方のお声です。</p>
+
+      <div class="grid-2">
+        <div class="card voice">
+          <h3>大きな棚やベッドも積み込めて助かりました</h3>
+          <p>
+            遺品整理などで出た大きな棚やベッドなど、
+            大きなものまで積み込むことができました。
+          </p>
+        </div>
+
+        <div class="card voice">
+          <h3>重量が見えるので安心でした</h3>
+          <p>
+            トラックに付いている計量器で何kgまで積んでいるのか見えて、
+            とても安心しました。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-subtitle">お問い合わせ前にご確認いただきたい内容をまとめました。</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Q. お支払いはどのようにすればよいですか？</div>
+          <div>A. 現地での現金回収になります。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Q. 家電リサイクル券はどこで買えますか？</div>
+          <div>A. お近くの郵便局でお求めいただけます。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Q. 冷蔵庫や洗濯機も回収できますか？</div>
+          <div>A. 可能です。ただし、家電リサイクル券が必要になるため、事前のご準備をお願いいたします。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Q. 一人暮らしでも頼みやすいですか？</div>
+          <div>A. 女性ドライバーも在籍しているため、一人暮らしの女性にも安心してお申し込みいただけます。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container cta-inner">
+      <h2>岩倉・小牧の粗大ゴミ回収のご相談はこちら</h2>
+      <p>家具や家電などの不用品回収について、お気軽にお問い合わせください。</p>
+      <div class="tel-number">0587-37-0111</div>
+      <a href="tel:0587370111" class="btn" style="background:#fff;color:#169daa;">電話で申し込む</a>
+      <div class="mail">メール：y-nanno@ecoservices.co.jp</div>
+
+      <div class="cta-frog">
+        <img src="IMG_0624.jpeg" alt="エコサービス株式会社のカエルキャラクター">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>エコサービス株式会社</p>
+      <p>対応エリア：岩倉市・小牧市</p>
+      <p>TEL：0587-37-0111</p>
+      <p>MAIL：y-nanno@ecoservices.co.jp</p>
+    </div>
+  </footer>
+
+  <div class="sticky-tel">
+    <a href="tel:0587370111">電話する</a>
+  </div>
+
+</body>
+</html>
